@@ -1,0 +1,74 @@
+Explain in detail:
+? HDFS
+? Hadoop cluster
+? HDFS Blocks
+
+*HDFS : 
+
+	*HDFS is the distributed file system which runs on the hardware and provides best performance
+	 for accessing the data with the help of mapreduce functionality for huge data.
+
+	*Around 100 and 1000 machines are connected as nodes and hdfs helps to store huge volume of data
+	 across these multiple machines simultaneously
+
+	*HDFS also provides the data replication of the data that is being stored around 3 copies of each data.
+	 the copies can be placed in any rack based upon our requirement so that to reduce data loss in case 
+	 of failures.
+
+	*HDFS is performed through master and slave architecture where every cluster will have a single name node 
+	 which manages all the system file operations .
+
+	*HDFS supports several API's as it is mainly programmed through java language,
+
+
+*Hadoop Cluster : 
+
+	*Hadoop cluster represents the distributed computing environment which is mainly focussed for 
+	analyzing huge amount of data in any structure. 
+
+	*Obviously a single machine alone can act as a name node in a cluster which is the master.
+
+	*Remaining machines will be acting as both data nodes and also as tasktracker which are slaves.
+
+	*These clusters are highly scalable based upon our requirements
+
+	*Hadoop clusters are meant for their high speed of processing.
+
+	*hadoop clusters only shares the network connections with the nodes it is linked to.
+
+	*Any number of nodes can be added to the cluster to increase the computation capability.
+
+	*Hadoop highly overcomes the failure as it has multiple duplications of data which can be recovered 
+	over time.
+
+	*All the clusters are arranged in several racks and can communicate through any rack for increasing 
+	the performance of the entire system.
+
+
+
+
+*HDFS Blocks : 
+
+	*HDFS stores the entire data only in the form of blocks in its nodes.
+
+	*By default the block size will be of 128 mb.
+	
+	*the entire hadoop file system will be splitted into 128 mb block to store the files.
+
+	*the data will be distributed among the blocks through the hdfs .
+
+	*Since all the blocks are of 128 mb it is easy to make the count of no of blocks occupied and free.
+
+	*Datanode simply stores the files being transmitted to it by the namenode.
+
+	*Meta data of all the blocks will be generally maintained by the name node.
+
+	*Block storage in datanode may be free if the file size is less. 
+
+	*Bigger files are distributed across the blocks in the data node. 
+
+	*Duplication of the blocks are done in the datanode by hdfs which overcomes failure and data loss.
+
+	*In general minmum replication factor is 1 and maximum is 3.
+
+	
